@@ -1,0 +1,105 @@
+:root {
+    --clr-dark: #7a5b3d;  
+    --clr-light: #b89a6a; 
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    text-align: center;
+    color: #333; 
+    background-color: white; 
+    font-family: sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    min-height: 100vh; 
+}
+
+header {
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: var(--clr-dark);
+}
+
+.container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    background-color: var(--clr-light);
+    padding: 20px;
+    border: 5px solid var(--clr-dark); 
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 600px; 
+    height: 600px; 
+    position: relative;
+}
+
+.row {
+    display: flex;
+    justify-content: center; 
+    margin-bottom: 15px;
+}
+
+.note {
+    background-color: white; 
+    border: 4px solid white; 
+    width: 160px; 
+    height: 210px; 
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 0 10px; 
+    overflow: hidden; 
+}
+
+.note-image {
+    width: 100%;
+    height: 70%; 
+    object-fit: cover;
+}
+
+.note-content {
+    font-weight: bold;
+    font-size: 14px; 
+    font-style: italic; 
+    margin: 5px 0; 
+    text-align: center; 
+}
+
+.reminder-box {
+    background-color: #fef2d0; 
+    color: #333;
+    padding: 10px;
+    text-align: center; 
+    border-radius: 10px; 
+    width: 300px; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    margin: 10px 0; 
+}
+
+.reminder-box h2 {
+    margin: 0; 
+    margin-bottom: 5px; 
+    color: #4B3D3A; 
+}
+
+.reminder-box p {
+    margin: 0; 
+}
